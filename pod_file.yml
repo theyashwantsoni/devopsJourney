@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jsonserver
+  labels:
+    name: jsonserver
+spec:
+  containers:
+  - name: jsonserver
+    image: theyashwantsoni/jsonserver:1.0.0
+    ports:
+    - containerPort: 3000
